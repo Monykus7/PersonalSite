@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="mx-auto">
           {!imageMissing ? (
             <img
-              src="/headshot.jpg"
+              src={`${import.meta.env.BASE_URL}/headshot.jpg`}
               alt={`${personalInfo.name} headshot`}
               className="h-44 w-44 rounded-full border-4 border-indigo-400 object-cover shadow-lg"
               onError={() => setImageMissing(true)}
