@@ -39,7 +39,7 @@ export const personalInfo = {
 }
 
 export const about =
-  'Junior at the University of Maryland studying Computer Science with a focus on Machine Learning. Currently conducting Quantum Machine Learning research under Professor Shabnam Jabeen in the FIRE program, running real quantum computations on IonQ hardware. I build full-stack AI applications and love working at the intersection of research and engineering.'
+  'Sophomore at the University of Maryland studying Computer Science with a focus on Machine Learning. Minoring in Computational Finance as well as Robotics and Autonomous Systems. Currently conducting Quantum Machine Learning research under Professor Shabnam Jabeen in the FIRE program, running real quantum computations on IonQ hardware. I build full-stack AI applications and love working at the intersection of research and engineering.'
 
 export const skills = {
   languages: [
