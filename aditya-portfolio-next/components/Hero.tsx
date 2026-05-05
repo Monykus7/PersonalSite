@@ -2,9 +2,14 @@
 
 import { useState } from 'react'
 import { personalInfo } from '@/data/content'
+import { publishedSiteBasePath } from '@/site.config'
 
 export default function Hero() {
   const [imageMissing, setImageMissing] = useState(false)
+  const headshotSrc =
+    process.env.NODE_ENV === 'production'
+      ? `${publishedSiteBasePath}/headshot.jpg`
+      : '/headshot.jpg'
 
   const scrollToExperience = () => {
     document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -16,7 +21,7 @@ export default function Hero() {
         <div className="mx-auto">
           {!imageMissing ? (
             <img
-              src="headshot.jpg"
+              src={headshotSrc}
               alt={`${personalInfo.name} headshot`}
               className="h-44 w-44 rounded-full border-4 border-indigo-400 object-cover shadow-lg"
               onError={() => setImageMissing(true)}
