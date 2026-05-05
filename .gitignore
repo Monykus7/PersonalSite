@@ -1,0 +1,4 @@
+# Ignore Next.js build outputs in the app subdirectory
+aditya-portfolio-next/.next/
+aditya-portfolio-next/out/
+aditya-portfolio-next/node_modules/

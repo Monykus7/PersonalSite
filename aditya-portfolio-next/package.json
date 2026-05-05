@@ -1,0 +1,30 @@
+{
+  "name": "aditya-portfolio-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:pages": "cross-env SITE_BASE_PATH=/PersonalSite npm run build",
+    "start": "next start",
+    "lint": "eslint",
+    "deploy": "cross-env SITE_BASE_PATH=/PersonalSite npm run build && node -e \"require('fs').writeFileSync('out/.nojekyll','')\" && npx gh-pages -d out"
+  },
+  "dependencies": {
+    "next": "16.2.4",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "cross-env": "^7.0.3",
+    "eslint-config-next": "16.2.4",
+    "gh-pages": "^6.3.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
