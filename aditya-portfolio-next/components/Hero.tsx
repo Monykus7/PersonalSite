@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
 import { personalInfo } from '@/data/content'
 
 export default function Hero() {
@@ -16,13 +15,10 @@ export default function Hero() {
       <div className="mx-auto grid w-full max-w-6xl items-center gap-10 md:grid-cols-[220px_1fr]">
         <div className="mx-auto">
           {!imageMissing ? (
-            <Image
-              src="/headshot.jpg"
+            <img
+              src="headshot.jpg"
               alt={`${personalInfo.name} headshot`}
-              width={176}
-              height={176}
               className="h-44 w-44 rounded-full border-4 border-indigo-400 object-cover shadow-lg"
-              unoptimized
               onError={() => setImageMissing(true)}
             />
           ) : (
