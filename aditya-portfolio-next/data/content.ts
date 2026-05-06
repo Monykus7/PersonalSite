@@ -111,11 +111,11 @@ export const projects: Project[] = [
     slug: 'relay',
     narrative: {
       problem:
-        "Nursing shift handoffs are error-prone and unstructured — critical patient info gets lost between verbal exchanges. No tooling existed that could take a nurse's natural speech and produce a structured, flagged SBAR document instantly.",
+        'Relay is a clinical handoff assistant I built during the Anthropic Health and Wellness Hackathon. The artifact is a working web app that turns a nurse’s spoken or typed notes into a structured SBAR handoff so the next shift can quickly understand what happened, what still needs attention, and what risks remain.',
       build:
-        'Built a full-stack clinical handoff assistant: nurses speak or type freeform notes, and the app uses an LLM backend (NVIDIA NIM) to structure output into SBAR format with open-loop flags. React frontend, FastAPI backend, Supabase Postgres. Won 1st place at the Anthropic Health & Wellness Hackathon.',
+        'I developed skills in full-stack product delivery (React + FastAPI + database integration), prompt design for reliable medical-style formatting, and real-time interaction design so output appears quickly and stays easy to correct. These skills came from shipping a complete product under tight hackathon constraints, not just building a demo screen.',
       learned:
-        'Prompt engineering for reliability in high-stakes domains, real-time streaming from LLM APIs to a React UI, and how to scope an ambitious product to a 24-hour build window.',
+        'I learned that in high-stakes settings, clarity and reliability matter more than flashy AI output. In plain terms: users trust systems that are predictable, easy to verify, and fast to fix. Those lessons transfer directly to other fields like finance, logistics, and education, where people also need clear summaries, clear next actions, and tools that reduce mistakes under time pressure.',
     },
   },
   {
@@ -131,11 +131,11 @@ export const projects: Project[] = [
     slug: 'terpspark',
     narrative: {
       problem:
-        "LLMs hallucinate and confirm bias when used in isolation — a single model's reasoning is hard to stress-test without an adversarial counterpart.",
+        'TerpSpark is a multi-agent debate artifact I built in a hackathon context to test ideas more rigorously than a single-chatbot response. Instead of one model answering alone, multiple agents challenge each other before producing a final recommendation.',
       build:
-        'Designed a Visionary-Critic-Judge multi-agent debate engine where three LLM agents argue a topic, challenge each other, and converge on a verdict. Features real-time SSE token streaming so users can watch the debate unfold, and users can interject mid-debate. State persists in Azure Cosmos DB.',
+        'I developed specific skills in multi-agent orchestration, streaming system design (SSE), and state management for long-running conversations. I also strengthened practical software architecture skills by balancing latency, reliability, and persistence while allowing user interjections in real time.',
       learned:
-        'Multi-agent orchestration patterns, SSE streaming in a React/Python stack, and the practical limits of LLM "reasoning" when forced into adversarial dialogue.',
+        'I learned, in a way that is easy to explain to non-technical audiences, that "more AI" is not always better unless the system has structure. A debate workflow improves answer quality because each step checks the previous step. That transferable pattern applies to many jobs: peer review in research, red-team checks in security, and decision review in business operations.',
     },
   },
   {
@@ -151,11 +151,11 @@ export const projects: Project[] = [
     slug: 'floradex',
     narrative: {
       problem:
-        'Small-scale farmers lack access to fast, cheap crop disease diagnosis — traditional lab testing is slow and expensive.',
+        'Floradex is an end-to-end plant disease diagnosis artifact built to make crop health feedback faster for users who do not have immediate lab access. The context was creating a usable ML product where someone can upload a plant image and get a practical result quickly.',
       build:
-        'Trained a custom CNN in PyTorch on a labeled plant disease dataset, achieving 98% classification accuracy. Wrapped it in a Flask API with a JavaScript/Tailwind frontend where users upload a photo and receive an instant diagnosis. Includes user auth and encrypted data storage.',
+        'I developed concrete skills in machine learning model development, API design, and secure full-stack integration. This included dataset preparation, CNN training, model serving through Flask, and building a clean upload-and-result user experience with authentication and protected data handling.',
       learned:
-        'End-to-end ML deployment (training → API → UI), data augmentation strategies for small datasets, and secure handling of user-uploaded files.',
+        'I learned that a strong model is only one part of a good solution; users also need understandable outputs, dependable performance, and safe data handling. These skills transfer broadly to healthcare, fintech, and enterprise software because every field values trustworthy predictions, secure user workflows, and clear communication of uncertainty.',
     },
   },
 ]
@@ -176,11 +176,11 @@ export const experience: ExperienceItem[] = [
     slug: 'qml-researcher',
     narrative: {
       context:
-        "Undergraduate research position within UMD's FIRE program under Professor Shabnam Jabeen. Work runs on real IonQ quantum hardware — not simulated environments.",
+        "This artifact is my ongoing undergraduate research work in UMD's FIRE program under Professor Shabnam Jabeen. The context is applied quantum machine learning on real IonQ hardware, where results must account for real device noise and hardware limits rather than ideal classroom simulations.",
       contribution:
-        "Designing quantum compression algorithms that integrate IBM's Qiskit API with PyTorch. Circuits currently achieve 93% accuracy with a theoretically exponential speedup over classical counterparts. Also responsible for containerized model runs on research clusters.",
+        "I developed skills in experimental design, hybrid quantum-classical model building (Qiskit + PyTorch), and reproducible compute workflows using containers and clusters. I also built the communication skill of translating advanced quantum results into clear updates that collaborators can act on.",
       impact:
-        'First hands-on experience running actual quantum computations on trapped-ion hardware. Developing intuition for where quantum approaches genuinely outperform classical ones versus where the overhead is not worth it.',
+        'I learned that research value comes from disciplined testing and honest interpretation, not just exciting theory. In lay terms: you must prove when a new method helps and when it does not. These skills transfer to any evidence-driven role, including data science, product experimentation, and policy analysis, where careful measurement and clear reporting drive better decisions.',
     },
   },
   {
@@ -198,11 +198,11 @@ export const experience: ExperienceItem[] = [
     slug: 'frc-lead',
     narrative: {
       context:
-        'Led the software division of a competitive high school robotics team (Portola FRC) over four years, growing from contributor to sole software lead.',
+        'This artifact is my leadership and engineering work as software lead for a competitive robotics team over four years. The context was building dependable robot software while also growing newer programmers into effective contributors during fast competition cycles.',
       contribution:
-        'Built a WPILib-based autonomous and teleop control algorithm that improved rotational speed by 40% and battery efficiency by 30%. Trained 27 team members in Java from scratch and ran internal workshops and judge-facing presentations.',
+        'I developed skills in control-system programming, performance tuning under hardware constraints, technical mentorship, and team process design. I wrote and optimized WPILib code while also creating training systems that helped 27 teammates contribute meaningful code safely.',
       impact:
-        'First experience leading a technical team under real competitive pressure. Learned that readable, well-documented code matters far more when 27 other people need to maintain it.',
+        'I learned that scalable engineering is as much about people and documentation as code. For non-technical audiences: a system is only strong if others can understand, maintain, and improve it. Those skills transfer directly to software teams, operations groups, and cross-functional projects where long-term reliability depends on shared understanding.',
     },
   },
   {
@@ -220,11 +220,11 @@ export const experience: ExperienceItem[] = [
     slug: 'quant-intern',
     narrative: {
       context:
-        'Summer internship at Rapid Conn Inc / LumiCharge, a consumer electronics company, supporting a product launch for their flagship LED lamp.',
+        'This artifact is my internship work supporting a LumiCharge product launch, where I built data and automation support for market strategy. The context was a business-focused environment where decisions had to be made quickly with imperfect data.',
       contribution:
-        'Built web scraping pipelines to identify and qualify vendors, increasing lead generation by 20%. Designed a go-to-market plan with a projected 10% sales uplift. Built Excel macros to automate categorization of scraped advertiser data.',
+        'I developed skills in web data collection, data cleaning, lightweight automation, and converting analysis into business recommendations. I built scraping pipelines, automated categorization workflows, and translated findings into a practical go-to-market plan.',
       impact:
-        'First professional engineering role. Learned to translate data work into business outcomes — and that automation that saves 5 hours/week compounds fast over a summer.',
+        'I learned that technical work creates the most value when it is connected to clear operational outcomes. In plain language: saving small amounts of time repeatedly can have large business impact. These transferable skills apply across finance, consulting, product, and operations roles where data-backed decisions and process automation improve results.',
     },
   },
 ]
