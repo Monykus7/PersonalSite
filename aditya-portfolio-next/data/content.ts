@@ -111,11 +111,11 @@ export const projects: Project[] = [
     slug: 'relay',
     narrative: {
       problem:
-        'Relay is a clinical handoff assistant I built during the Anthropic Health and Wellness Hackathon. The artifact is a working web app that turns a nurse’s spoken or typed notes into a structured SBAR handoff so the next shift can quickly understand what happened, what still needs attention, and what risks remain.',
+        'Relay is a clinical handoff assistant I built during the Anthropic Health and Wellness Hackathon after hearing how stressful shift-change communication can be for nurses. The artifact is a full product, not just a prototype: a web app where a nurse can speak naturally, have that note structured into SBAR, and immediately see what is complete versus what still needs follow-up. I wanted the experience to feel like a calm second brain during one of the most time-pressured moments in a hospital workflow.',
       build:
-        'I developed skills in full-stack product delivery (React + FastAPI + database integration), prompt design for reliable medical-style formatting, and real-time interaction design so output appears quickly and stays easy to correct. These skills came from shipping a complete product under tight hackathon constraints, not just building a demo screen.',
+        'Building Relay pushed me to grow in three specific areas: dependable full-stack delivery, human-centered AI behavior, and rapid iteration under pressure. On the engineering side, I connected a React frontend, FastAPI backend, and Supabase data layer into a coherent system that stayed responsive while processing live input. On the AI side, I practiced prompt and output design so results were structured, auditable, and easy to edit when the model got something wrong. On the product side, I learned to prioritize trust-building details, like explicit "open loops," because in healthcare UX, transparency matters as much as speed.',
       learned:
-        'I learned that in high-stakes settings, clarity and reliability matter more than flashy AI output. In plain terms: users trust systems that are predictable, easy to verify, and fast to fix. Those lessons transfer directly to other fields like finance, logistics, and education, where people also need clear summaries, clear next actions, and tools that reduce mistakes under time pressure.',
+        'The biggest lesson was personal: I used to think "smart output" was the goal, but this project taught me that "trusted output" is the goal. In layperson terms, people do not care how advanced the model is if they cannot quickly check it, correct it, and move on confidently. That learning outcome travels well across fields. In finance, teams need clear risk summaries; in logistics, they need reliable handoff notes; in education, they need understandable feedback. The transferable skill is designing systems that reduce cognitive load and prevent avoidable mistakes when stakes are high.',
     },
   },
   {
@@ -131,11 +131,11 @@ export const projects: Project[] = [
     slug: 'terpspark',
     narrative: {
       problem:
-        'TerpSpark is a multi-agent debate artifact I built in a hackathon context to test ideas more rigorously than a single-chatbot response. Instead of one model answering alone, multiple agents challenge each other before producing a final recommendation.',
+        'TerpSpark is a multi-agent debate artifact I built because I was frustrated by one-shot AI answers that sounded confident but skipped critical trade-offs. The context was a hackathon environment where I wanted to test whether structured disagreement could produce better reasoning. Instead of one model giving a monologue, the system stages a debate between multiple roles so ideas are challenged before a final recommendation is shown.',
       build:
-        'I developed specific skills in multi-agent orchestration, streaming system design (SSE), and state management for long-running conversations. I also strengthened practical software architecture skills by balancing latency, reliability, and persistence while allowing user interjections in real time.',
+        'Creating this artifact developed my skills in multi-agent orchestration, event-stream architecture, and conversational state management. I designed role-specific agent behavior (Visionary, Critic, Judge), built streaming with SSE so users could watch thought progression in real time, and added interruption support so people could redirect the system mid-flow without losing context. I also improved my system-design judgment by balancing three competing concerns at once: response speed, stability, and cost.',
       learned:
-        'I learned, in a way that is easy to explain to non-technical audiences, that "more AI" is not always better unless the system has structure. A debate workflow improves answer quality because each step checks the previous step. That transferable pattern applies to many jobs: peer review in research, red-team checks in security, and decision review in business operations.',
+        'I learned that better outcomes usually come from better process, not just better models. In plain language: if one answer is allowed to go unchallenged, weak ideas slip through; when ideas are forced through critique, quality improves. This made me a more thoughtful builder because I now design "checks and balances" into AI systems from day one. Those skills transfer naturally to research peer review, security red-teaming, product decision reviews, and any job where high-quality thinking requires structured challenge.',
     },
   },
   {
@@ -151,11 +151,11 @@ export const projects: Project[] = [
     slug: 'floradex',
     narrative: {
       problem:
-        'Floradex is an end-to-end plant disease diagnosis artifact built to make crop health feedback faster for users who do not have immediate lab access. The context was creating a usable ML product where someone can upload a plant image and get a practical result quickly.',
+        'Floradex is an end-to-end plant disease diagnosis artifact I built to make technical ML useful for real people, especially users who cannot wait for expensive or slow lab workflows. The context was translating a model project into something a person could actually use: upload a plant image, get a fast diagnosis, and take action without needing deep technical knowledge.',
       build:
-        'I developed concrete skills in machine learning model development, API design, and secure full-stack integration. This included dataset preparation, CNN training, model serving through Flask, and building a clean upload-and-result user experience with authentication and protected data handling.',
+        'This project helped me develop practical ML engineering skills across the full lifecycle: cleaning and augmenting image data, training and validating a CNN in PyTorch, exposing inference through a Flask API, and building a frontend that made results readable instead of intimidating. I also learned to integrate authentication and secure storage early, which changed how I think about responsible product design. The artifact reflects not only model performance, but also the surrounding reliability and usability work that makes a tool trustworthy.',
       learned:
-        'I learned that a strong model is only one part of a good solution; users also need understandable outputs, dependable performance, and safe data handling. These skills transfer broadly to healthcare, fintech, and enterprise software because every field values trustworthy predictions, secure user workflows, and clear communication of uncertainty.',
+        'My biggest learning outcome was that ML value comes from delivery, not accuracy alone. In layperson terms, a "98% model" is not enough if users do not understand the result, cannot trust the workflow, or cannot recover from mistakes. This shaped how I now approach every AI project: build for clarity, reliability, and safety from the start. Those skills transfer directly to healthcare diagnostics, fintech risk scoring, and enterprise automation, where people need predictions they can interpret and act on with confidence.',
     },
   },
 ]
@@ -176,11 +176,11 @@ export const experience: ExperienceItem[] = [
     slug: 'qml-researcher',
     narrative: {
       context:
-        "This artifact is my ongoing undergraduate research work in UMD's FIRE program under Professor Shabnam Jabeen. The context is applied quantum machine learning on real IonQ hardware, where results must account for real device noise and hardware limits rather than ideal classroom simulations.",
+        "This artifact is my ongoing undergraduate research in UMD's FIRE program under Professor Shabnam Jabeen, focused on quantum machine learning on real IonQ hardware. The context matters deeply: unlike classroom simulation work, this environment includes noise, hardware constraints, and unpredictable behavior, so every result has to be earned through careful experimentation. Working in that setting made the research feel both humbling and exciting because theory and reality did not always agree.",
       contribution:
-        "I developed skills in experimental design, hybrid quantum-classical model building (Qiskit + PyTorch), and reproducible compute workflows using containers and clusters. I also built the communication skill of translating advanced quantum results into clear updates that collaborators can act on.",
+        "I developed skills in experimental design, hybrid model implementation (Qiskit + PyTorch), and reproducible compute workflows on containers and clusters. Beyond the technical layer, I also built the communication habit of writing concise experiment logs, documenting failed runs, and translating complex quantum findings into clear updates teammates could act on. A major part of my contribution was making the work easier to validate and continue, not just running isolated experiments.",
       impact:
-        'I learned that research value comes from disciplined testing and honest interpretation, not just exciting theory. In lay terms: you must prove when a new method helps and when it does not. These skills transfer to any evidence-driven role, including data science, product experimentation, and policy analysis, where careful measurement and clear reporting drive better decisions.',
+        'I learned that strong research is less about proving yourself right and more about finding out what is true. In layperson language, this means being willing to say "this did not work, and here is why" with the same clarity as reporting a success. That mindset gave me transferable skills in evidence-based reasoning, uncertainty communication, and decision discipline. These are valuable in data science, product experimentation, consulting, and policy work, where choices should be guided by measurement rather than assumptions.',
     },
   },
   {
@@ -198,11 +198,11 @@ export const experience: ExperienceItem[] = [
     slug: 'frc-lead',
     narrative: {
       context:
-        'This artifact is my leadership and engineering work as software lead for a competitive robotics team over four years. The context was building dependable robot software while also growing newer programmers into effective contributors during fast competition cycles.',
+        'This artifact is my four-year journey as software lead on a competitive robotics team, where the context was high-pressure build seasons, hard deadlines, and a constantly changing team. I was not only writing code for performance-critical systems; I was also building a culture where newer students could learn quickly, contribute confidently, and trust the process during competition stress.',
       contribution:
-        'I developed skills in control-system programming, performance tuning under hardware constraints, technical mentorship, and team process design. I wrote and optimized WPILib code while also creating training systems that helped 27 teammates contribute meaningful code safely.',
+        'I developed skills in control-system programming, real-time performance tuning, mentorship, and team process design. I wrote and optimized WPILib code to improve robot responsiveness and battery efficiency, but I also treated onboarding as an engineering problem: structured training plans, code review habits, and shared conventions that made team output more consistent. Training 27 teammates taught me how to turn tacit knowledge into repeatable systems others could apply independently.',
       impact:
-        'I learned that scalable engineering is as much about people and documentation as code. For non-technical audiences: a system is only strong if others can understand, maintain, and improve it. Those skills transfer directly to software teams, operations groups, and cross-functional projects where long-term reliability depends on shared understanding.',
+        'The most meaningful lesson was that leadership in technical spaces is measured by what the team can sustain, not what one person can build alone. In simple terms, great code is not enough if nobody else can maintain it when pressure hits. This experience strengthened transferable skills in coaching, operational planning, and communication across skill levels. Those skills are useful in any environment where long-term reliability depends on shared ownership, including startups, research labs, and enterprise teams.',
     },
   },
   {
@@ -220,11 +220,11 @@ export const experience: ExperienceItem[] = [
     slug: 'quant-intern',
     narrative: {
       context:
-        'This artifact is my internship work supporting a LumiCharge product launch, where I built data and automation support for market strategy. The context was a business-focused environment where decisions had to be made quickly with imperfect data.',
+        'This artifact is my internship work supporting a LumiCharge product launch, where I built data and automation systems to support business strategy under real deadlines. The context was fast-moving and imperfect: decisions still had to be made even when data was messy, incomplete, or changing daily.',
       contribution:
-        'I developed skills in web data collection, data cleaning, lightweight automation, and converting analysis into business recommendations. I built scraping pipelines, automated categorization workflows, and translated findings into a practical go-to-market plan.',
+        'I developed skills in web data collection, data cleaning, workflow automation, and translating analysis into actionable recommendations. I built scraping pipelines to identify vendors, automated categorization tasks that were previously manual, and connected those outputs to a practical go-to-market plan stakeholders could use immediately. This work strengthened my ability to combine technical execution with business communication.',
       impact:
-        'I learned that technical work creates the most value when it is connected to clear operational outcomes. In plain language: saving small amounts of time repeatedly can have large business impact. These transferable skills apply across finance, consulting, product, and operations roles where data-backed decisions and process automation improve results.',
+        'I learned that technical output only matters when it changes decisions or saves real time for real people. In layperson terms, shaving even a few minutes off a repeated task can create huge value over weeks or months. That insight shaped how I scope projects now: start with the operational bottleneck, then automate with purpose. These are highly transferable skills for product, operations, consulting, finance, and any role where better data workflows lead to better outcomes.',
     },
   },
 ]
