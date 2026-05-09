@@ -19,16 +19,17 @@ export default function HomePage() {
 
           <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
             {experience.map((e, i) => (
-              <ArtifactCard
-                key={e.slug}
-                href={`/experience/${e.slug}`}
-                category="Experience"
-                title={e.role}
-                subtitle={`${e.org} · ${e.location}`}
-                tags={[]}
-                className="animate-fade-in-up"
-                style={{ animationDelay: `${i * 80}ms` }}
-              />
+              <div key={e.slug} id={`experience-${e.slug}`} className="scroll-mt-24">
+                <ArtifactCard
+                  href={`/experience/${e.slug}`}
+                  category="Experience"
+                  title={e.role}
+                  subtitle={`${e.org} · ${e.location}`}
+                  tags={[]}
+                  className="animate-fade-in-up"
+                  style={{ animationDelay: `${i * 80}ms` }}
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -40,21 +41,22 @@ export default function HomePage() {
 
           <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
             {projects.map((p, i) => (
-              <ArtifactCard
-                key={p.slug}
-                href={`/projects/${p.slug}`}
-                category="Project"
-                title={p.title}
-                subtitle={p.subtitle}
-                tags={p.tags}
-                highlight={p.highlight}
-                categoryPillText={
-                  p.slug === 'relay' || p.slug === 'terpspark' ? 'Hackathon' : undefined
-                }
-                hideCategoryPill={p.slug === 'floradex'}
-                className="animate-fade-in-up"
-                style={{ animationDelay: `${(i + experience.length) * 80}ms` }}
-              />
+              <div key={p.slug} id={`project-${p.slug}`} className="scroll-mt-24">
+                <ArtifactCard
+                  href={`/projects/${p.slug}`}
+                  category="Project"
+                  title={p.title}
+                  subtitle={p.subtitle}
+                  tags={p.tags}
+                  highlight={p.highlight}
+                  categoryPillText={
+                    p.slug === 'relay' || p.slug === 'terpspark' ? 'Hackathon' : undefined
+                  }
+                  hideCategoryPill={p.slug === 'floradex'}
+                  className="animate-fade-in-up"
+                  style={{ animationDelay: `${(i + experience.length) * 80}ms` }}
+                />
+              </div>
             ))}
           </div>
         </div>

@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useState } from 'react'
 import { personalInfo } from '@/data/content'
 import { publishedSiteBasePath } from '@/site.config'
@@ -64,6 +65,15 @@ export default function Hero() {
             >
               GitHub
             </a>
+          </div>
+
+          <div className="mt-6 flex items-center justify-center md:justify-start">
+            <Link
+              href="/reflection"
+              className="rounded-md border border-indigo-400/60 px-4 py-2 text-sm font-medium text-indigo-200 transition hover:border-indigo-300 hover:text-indigo-100"
+            >
+              Reflection
+            </Link>
           </div>
 
           <button
