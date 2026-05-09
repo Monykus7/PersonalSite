@@ -1,6 +1,7 @@
 import Hero from '@/components/Hero'
 import ArtifactCard from '@/components/ArtifactCard'
 import { projects, experience, skills } from '@/data/content'
+import { publishedSiteBasePath } from '@/site.config'
 
 const skillGroups = [
   { title: 'Languages', items: skills.languages },
@@ -9,9 +10,26 @@ const skillGroups = [
 ]
 
 export default function HomePage() {
+  const introVideoSrc =
+    process.env.NODE_ENV === 'production'
+      ? `${publishedSiteBasePath}/IntroVideo.mp4`
+      : '/IntroVideo.mp4'
+
   return (
     <>
       <Hero />
+      <section className="bg-white px-4 py-10 md:px-8">
+        <div className="mx-auto flex w-full max-w-6xl justify-center">
+          <video
+            controls
+            preload="metadata"
+            className="w-full max-w-sm justify-self-center rounded-lg border border-gray-200 bg-black shadow-sm"
+          >
+            <source src={introVideoSrc} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
 
       <section id="experience" className="scroll-mt-20 bg-gray-50 px-4 py-16 md:px-8">
         <div className="mx-auto w-full max-w-6xl">

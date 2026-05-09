@@ -82,7 +82,7 @@ export default function Hero() {
             className="mt-8 block w-full text-center text-2xl text-indigo-300/90 transition hover:text-indigo-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-indigo-400 md:text-left"
             aria-label="Scroll to experience section"
           >
-            ↓
+            Artifacts ↓
           </button>
         </div>
       </div>
